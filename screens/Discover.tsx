@@ -1,13 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
-import {
-	FlatList,
-	ScrollView,
-	Text,
-	TouchableOpacity,
-	View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { FlatList, SafeAreaView } from 'react-native';
 
 import AppStatusBar from '../components/AppStatusBar';
 import Creator from '../components/Creator';

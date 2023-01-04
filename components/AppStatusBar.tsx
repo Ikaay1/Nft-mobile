@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, Text, View } from 'react-native';
+import { StatusBar, View } from 'react-native';
 
 import { useIsFocused } from '@react-navigation/native';
 

@@ -1,6 +1,5 @@
 import { Icon } from 'native-base';
 import React from 'react';
-import { Text, View } from 'react-native';
 import { G, Path } from 'react-native-svg';
 
 const MicrophoneIcon = () => {

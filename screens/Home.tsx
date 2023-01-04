@@ -9,8 +9,6 @@ import {
 	View,
 } from 'react-native';
 
-import { DefaultTheme } from '@react-navigation/native';
-
 import AppStatusBar from '../components/AppStatusBar';
 import Header from '../components/Header';
 import Product from '../components/Product';
