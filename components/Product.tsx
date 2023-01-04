@@ -4,6 +4,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { ItemInterface } from '../constants/type';
+import OutlineBorderedButton from './OutlineBorderedButton';
 import PlaceBidButton from './PlaceBidButton';
 
 const Product = ({item}: {item: ItemInterface}) => {
@@ -76,28 +77,10 @@ const Product = ({item}: {item: ItemInterface}) => {
         <PlaceBidButton
           onPress={() => navigation.navigate('Details', {item})}
         />
-        <TouchableOpacity
-          style={{
-            width: '100%',
-            marginTop: 10,
-            borderWidth: 1,
-            borderColor: 'blue',
-            borderRadius: 8,
-            height: 56,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: 'EpilogueBold',
-              fontSize: 20,
-              color: '#FCFCFC',
-            }}
-          >
-            View artwork
-          </Text>
-        </TouchableOpacity>
+        <OutlineBorderedButton
+          onPress={() => navigation.navigate('Discover')}
+          buttonText='View artwork'
+        />
       </View>
     </View>
   );

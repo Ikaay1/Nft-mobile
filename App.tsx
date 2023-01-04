@@ -7,6 +7,7 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Details from './screens/Details';
+import Discover from './screens/Discover';
 import Home from './screens/Home';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
     EpilogueBold: require('./assets/epilogue/Epilogue-Bold.ttf'),
     EpilogueRegular: require('./assets/epilogue/Epilogue-Regular.ttf'),
     EpilogueMedium: require('./assets/epilogue/Epilogue-Medium.ttf'),
+    EpilogueExtraLight: require('./assets/epilogue/Epilogue-ExtraLight.ttf'),
   });
   if (!loaded) return null;
   return (
@@ -34,6 +36,7 @@ export default function App() {
         >
           <Stack.Screen name='Home' component={Home} />
           <Stack.Screen name='Details' component={Details} />
+          <Stack.Screen name='Discover' component={Discover} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

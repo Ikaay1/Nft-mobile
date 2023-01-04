@@ -5,9 +5,11 @@ import { Text, TouchableOpacity, View } from 'react-native';
 const PlaceBidButton = ({
   onPress,
   marginTop,
+  buttonText,
 }: {
   onPress?: () => void;
   marginTop?: number;
+  buttonText?: string;
 }) => {
   return (
     <LinearGradient
@@ -35,7 +37,7 @@ const PlaceBidButton = ({
             color: '#FCFCFC',
           }}
         >
-          Place a bid
+          {!buttonText ? 'Place a bid' : buttonText}
         </Text>
       </TouchableOpacity>
     </LinearGradient>
